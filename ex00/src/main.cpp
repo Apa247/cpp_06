@@ -6,7 +6,7 @@
 /*   By: daparici <daparici@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 11:57:40 by daparici          #+#    #+#             */
-/*   Updated: 2024/11/12 11:52:59 by daparici         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:29:06 by daparici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
     std::string str = argv[1];
     Converter::convert(str);
 
-
+/*
     // Empty string
     std::cout << "Test with empty string:" << std::endl;
     Converter::convert("");
@@ -77,6 +77,6 @@ int main(int argc, char **argv) {
     std::cout << "Test with special literal '-inf':" << std::endl;
     Converter::convert("-inf");
     std::cout << std::endl;
-
+*/
     return 0;
 }
