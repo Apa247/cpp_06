@@ -6,11 +6,11 @@
 #    By: daparici <daparici@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 18:47:02 by daparici          #+#    #+#              #
-#    Updated: 2024/11/12 18:47:22 by daparici         ###   ########.fr        #
+#    Updated: 2024/11/12 23:56:47 by daparici         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 			=	
+NAME 			=	serializer 
 
 vpath                   %.hpp include
 vpath                   %.cpp src
@@ -27,7 +27,7 @@ UP			=	\033[A
 CUT			=	\033[K
 
 INCLUDE         =   -Iinclude/
-SRC = main.cpp  .cpp
+SRC = main.cpp  Data.cpp Serializer.cpp
 OBJ_DIR = obj
 
 CC = c++
