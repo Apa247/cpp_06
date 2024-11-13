@@ -3,21 +3,21 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: daparici <daparici@student.42.fr>          +#+  +:+       +#+         #
+#    By: daparici <daparici@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/12 18:47:02 by daparici          #+#    #+#              #
-#    Updated: 2024/11/12 23:56:47 by daparici         ###   ########.fr        #
+#    Created: 2024/11/13 10:49:35 by daparici          #+#    #+#              #
+#    Updated: 2024/11/13 10:52:19 by daparici         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 			=	serializer 
+NAME 			=	serializer
 
 vpath                   %.hpp include
 vpath                   %.cpp src
 vpath                   %.o obj
 
 # controll codes
-RESET		=	\033[0m
+RESET		=	\033[0m	
 GREEN		=	\033[32m
 YELLOW		=	\033[33m
 BLUE		=	\033[34m
@@ -65,8 +65,8 @@ $(NAME): $(OBJ)
 clean:
 	@if [ -d "$(OBJ_DIR)" ]; then \
 	rm -rf $(OBJ_DIR); \
-	echo "$(RED)Deleting all objects from /ex01...$(RESET)"; else \
-	echo "No objects to remove from /ex01."; \
+	echo "$(RED)Deleting all objects...$(RESET)"; else \
+	echo "No objects to remove."; \
 	fi;
 
 
@@ -74,8 +74,8 @@ clean:
 fclean: clean
 	@if [ -f "$(NAME)" ]; then \
 	rm -f $(NAME); \
-	echo "$(RED)Deleting $(NAME) from /ex01...$(RESET)"; else \
-	echo "No Executable to remove from /ex01."; \
+	echo "$(RED)Deleting $(NAME)...$(RESET)"; else \
+	echo "No Executable to remove"; \
 	fi;
 	
 

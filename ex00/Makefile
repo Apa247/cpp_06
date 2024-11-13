@@ -6,7 +6,7 @@
 #    By: daparici <daparici@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 11:55:44 by daparici          #+#    #+#              #
-#    Updated: 2024/11/12 11:54:02 by daparici         ###   ########.fr        #
+#    Updated: 2024/11/13 10:48:10 by daparici         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,8 +65,8 @@ $(NAME): $(OBJ)
 clean:
 	@if [ -d "$(OBJ_DIR)" ]; then \
 	rm -rf $(OBJ_DIR); \
-	echo "$(RED)Deleting all objects from /ex01...$(RESET)"; else \
-	echo "No objects to remove from /ex01."; \
+	echo "$(RED)Deleting all objects...$(RESET)"; else \
+	echo "No objects to remove."; \
 	fi;
 
 
@@ -74,8 +74,8 @@ clean:
 fclean: clean
 	@if [ -f "$(NAME)" ]; then \
 	rm -f $(NAME); \
-	echo "$(RED)Deleting $(NAME) from /ex01...$(RESET)"; else \
-	echo "No Executable to remove from /ex01."; \
+	echo "$(RED)Deleting $(NAME)...$(RESET)"; else \
+	echo "No Executable to remove"; \
 	fi;
 	
 
